@@ -17,7 +17,7 @@ body {
 }
 
 .search-bar input {
-  padding: 10px 15px;
+  padding: 8px 15px;
   width: 30%;
   border-radius: 10px;
   border: 2px solid rgba(32, 52, 183, 0.856);
@@ -26,6 +26,12 @@ body {
 input:focus{
   outline: none;
 }
+
+/* .search-icon{
+font-size: 2rem;
+margin-top: 5px;
+background-color: white;
+} */
 
 /* today weather  */
 .weather{
