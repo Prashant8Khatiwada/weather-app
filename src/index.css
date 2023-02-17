@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("src/images/background.jpg");
+}
+
+
+/* search bar */
+.search-bar {
+  margin-top: 40px;
+  text-align: center;
+
+}
+
+.search-bar input {
+  padding: 8px 15px;
+  width: 30%;
+  border-radius: 10px;
+  border: 2px solid rgba(32, 52, 183, 0.856);
+  font-size: 1.5rem;
+}
+input:focus{
+  outline: none;
+}
+
+/* .search-icon{
+font-size: 2rem;
+margin-top: 5px;
+background-color: white;
+} */
+
+/* today weather  */
+.weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+
+.today-weather{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgba(255, 255, 255, 0.393);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 30rem;
+  border-radius: 2rem;
+}
+
+ /* first part  */
+.today-weather-img {
+  margin-bottom: 4rem;
+height: 80%;
+}
+
+img{
+  height: 100%;
+}
+
+/* second part  */
+.today-weather-data{
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+}
+
+.other-weather{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -4.5rem;
+  width: 45%;
+}
+
+.other-weather-info{
+  border-radius: 3rem;
+  text-align: center;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.339);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
