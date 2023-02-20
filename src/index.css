@@ -27,11 +27,11 @@ input:focus{
   outline: none;
 }
 
-/* .search-icon{
+.search-icon{
 font-size: 2rem;
 margin-top: 5px;
 background-color: white;
-} */
+}
 
 /* today weather  */
 .weather{
