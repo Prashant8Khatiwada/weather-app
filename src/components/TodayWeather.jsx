@@ -3,7 +3,7 @@ import sun from "../svg/sun.svg";
 import cloud from "../svg/cloud.svg";
 import rain from "../svg/rain.svg";
 import cloudsun from "../svg/cloudsun.svg";
-function TodayWeather() {
+function TodayWeather({ data, city }) {
   return (
     <div className="weather">
       <div className="today-weather">
@@ -11,11 +11,22 @@ function TodayWeather() {
           <img src={sun} />
         </div>
 
+        {/* {data.map((item, idx) => {
+          <div className="today-weather-data">
+            <h4>Today's</h4>
+            <h1>{city}</h1>
+            <p>
+              Temperature: <span>{item.name.temp} degree celcius</span>
+            </p>
+            <p>Clear Sky</p>
+          </div>;
+        })} */}
+  
         <div className="today-weather-data">
           <h4>Today's</h4>
-          <h1>New York</h1>
+          <h1>{data.name}</h1>
           <p>
-            Temperature: <span>17 degree celcius</span>
+            Temperature: <span> degree celcius</span>
           </p>
           <p>Clear Sky</p>
         </div>
