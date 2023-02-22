@@ -11,22 +11,11 @@ function TodayWeather({ data, city }) {
           <img src={sun} />
         </div>
 
-        {/* {data.map((item, idx) => {
-          <div className="today-weather-data">
-            <h4>Today's</h4>
-            <h1>{city}</h1>
-            <p>
-              Temperature: <span>{item.name.temp} degree celcius</span>
-            </p>
-            <p>Clear Sky</p>
-          </div>;
-        })} */}
-  
         <div className="today-weather-data">
           <h4>Today's</h4>
           <h1>{data.name}</h1>
           <p>
-            Temperature: <span> degree celcius</span>
+            Temperature: <span> {data?.main?.temp} °C</span>
           </p>
           <p>Clear Sky</p>
         </div>
