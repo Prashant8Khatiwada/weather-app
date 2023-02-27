@@ -29,19 +29,21 @@ function SearchBar() {
 
   return (
     <>
-      <form className="search-bar">
-        <input
-          id="search"
-          name="search"
-          type="text"
-          placeholder="Enter a City..."
-          value={values.search}
-          onChange={handleChange}
-          onBlur={handleBlur}
-        />
-        <button type="submit" className="search-icon" onClick={handleClick}>
-          <BiSearch />
-        </button>
+      <form className="search-bar-form">
+        <div className="search-bar">
+          <input
+            id="search"
+            name="search"
+            type="text"
+            placeholder="Enter a City..."
+            value={values.search}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          <button type="submit" className="search-icon" onClick={handleClick}>
+            <BiSearch />
+          </button>
+        </div>
       </form>
       <TodayWeather data={searchData} city={dataforApi} />
     </>
